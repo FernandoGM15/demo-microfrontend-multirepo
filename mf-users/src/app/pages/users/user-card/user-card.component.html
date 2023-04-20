@@ -1,0 +1,20 @@
+<div class="card">
+  <div class="card__content">
+    <div class="card__content--row">
+      <b>Name:</b>
+      <p>{{ user.name }}</p>
+    </div>
+    <div class="card__content--row">
+      <b>Email:</b>
+      <p>{{ user.email }}</p>
+    </div>
+    <div class="card__content--row">
+      <b>Phone:</b>
+      <p>{{ user.phone }}</p>
+    </div>
+    <div class="card__content--row">
+      <b>Website:</b>
+      <a [href]="'http://' + user.website">Link</a>
+    </div>
+  </div>
+</div>
