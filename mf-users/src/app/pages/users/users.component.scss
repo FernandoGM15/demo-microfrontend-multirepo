@@ -1,4 +1,5 @@
 .content{
+    border: 5px dashed blue;
     &__users{
         display: flex;
         flex-direction: column;
