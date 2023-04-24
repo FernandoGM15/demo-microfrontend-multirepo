@@ -10,6 +10,14 @@ const routes: Routes = [
       remoteEntry: 'http://localhost:4201/remoteEntry.js',
       exposedModule: "./UsersModule"
     }).then(m => m.UsersModule)
+  },
+  {
+    path: "posts",
+    loadChildren: () => loadRemoteModule({
+      type: 'module',
+      remoteEntry: 'http://localhost:4202/remoteEntry.js',
+      exposedModule: "./PostsModule"
+    }).then(m => m.PostsModule)
   }
 ];
 
