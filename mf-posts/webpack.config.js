@@ -3,7 +3,7 @@ const {
   withModuleFederationPlugin,
 } = require("@angular-architects/module-federation/webpack");
 
-module.exports = withModuleFederationPlugin({
+const moduleFederationConfig = withModuleFederationPlugin({
   name: "mfPosts",
 
   exposes: {
@@ -18,3 +18,6 @@ module.exports = withModuleFederationPlugin({
     }),
   },
 });
+
+moduleFederationConfig.output.publicPath = "http://localhost:4202/";
+module.exports = moduleFederationConfig;
