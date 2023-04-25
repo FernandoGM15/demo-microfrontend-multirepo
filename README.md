@@ -176,3 +176,7 @@ Add this line on tsconfig.json
     "allowSyntheticDefaultImports":true
   }
 ```
+
+- Implementation of PubSub in [mf-users](https://github.com/FernandoGM15/demo-microfrontend-multirepo/blob/main/mf-users/src/app/pages/users/user-card/user-card.component.ts#L21)
+
+- Implementation of PubSub in [mf-shell](https://github.com/FernandoGM15/demo-microfrontend-multirepo/blob/main/mf-shell/src/app/app.component.ts#L19)
