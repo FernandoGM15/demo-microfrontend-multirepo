@@ -5,6 +5,10 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 1rem;
+    &--logo {
+      display: flex;
+      align-items: center;
+    }
     &--actions {
       display: flex;
       gap: 1rem;
