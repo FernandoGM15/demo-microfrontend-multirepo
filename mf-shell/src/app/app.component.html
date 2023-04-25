@@ -1,6 +1,12 @@
-<div style="border: 5px dashed red">
-  <div>
-    <h1>Navbar</h1>
+<div class="content">
+  <div class="content__nav">
+    <div class="content__nav--logo">
+      <h1>Navbar</h1>
+    </div>
+    <div class="content__nav--actions">
+      <a [routerLink]="['/']">Users</a>
+      <a [routerLink]="['/posts']">Posts</a>
+    </div>
   </div>
   <router-outlet></router-outlet>
 </div>

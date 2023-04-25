@@ -1,0 +1,13 @@
+.content {
+  border: 5px dashed red;
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    &--actions {
+      display: flex;
+      gap: 1rem;
+    }
+  }
+}
