@@ -1,4 +1,6 @@
 import { Component, Input } from '@angular/core';
+import PubSub from 'pubsub-js';
+
 
 export interface UserI {
   name: string;
@@ -15,4 +17,7 @@ export interface UserI {
 export class UserCardComponent {
   @Input() user!: UserI;
 
+  onAdd() {
+    PubSub.publish('users', this.user);
+  }
 }
